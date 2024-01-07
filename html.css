@@ -26,6 +26,10 @@ script {
     display: none;
 }
 
+footer {
+    font-size:0.7em;
+}
+
 /* special escaping for close style */
 style::before {
     content:'<style>' 
