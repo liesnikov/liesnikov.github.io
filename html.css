@@ -32,8 +32,8 @@ style::after {
 
 :root {
     --body-bg: #fafafa;
-    --body-color: #333;
-    --tag-color: rgb(136, 18, 128, 0.5);
+    --body-color: #333333;
+    --tag-color: #d1d1d1;
     --max-width: 80ch;
 }
 
@@ -42,7 +42,7 @@ style::after {
   :root {
       --body-bg: #111111;
       --body-color: #d3d3d3;
-      --tag-color: rgba(170, 99, 165, 0.75);
+      --tag-color: #333;
   }
 }
 
