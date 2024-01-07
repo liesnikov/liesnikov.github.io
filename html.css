@@ -28,20 +28,18 @@
      content:'<\/style>' 
 }
 
-@media (prefers-color-scheme: light) {
-   :root {
-     --body-bg: #fafafa;
-     --body-color: #333;
-     --tag-color: rgb(136, 18, 128, 0.5);
-   }
+:root {
+    --body-bg: #fafafa;
+    --body-color: #333;
+    --tag-color: rgb(136, 18, 128, 0.5);
 }
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
    :root {
-       --body-bg: #000000;
-       --body-color: #FFFFFF;
-       --tag-color: rgb(136, 18, 128, 0.5);
+       --body-bg: #111111;
+       --body-color: #d3d3d3;
+       --tag-color: rgba(187, 66, 179, 0.5);
    }
 }
 
