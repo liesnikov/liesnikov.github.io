@@ -18,7 +18,7 @@ a,code,em,strong {
 a[href]:hover::before {
     content: "<a href='" attr(href) "'>" 
 }
-link[rel]:hover::before {
+link[rel]::before {
     content: "<link rel='" attr(rel) "' type='" attr(type)"' href='" attr(href) "'>" 
 }
 
