@@ -107,6 +107,12 @@ body::before {
 body::after {
     content:'</body>' 
 }
+footer::before{
+    content:'<footer>';
+}
+footer::after{
+    content:'</footer>';
+}
 h1::before {
     content:'<h1>' 
 }
