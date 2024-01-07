@@ -13,10 +13,10 @@
 
 /* tags with attributes. */
 
- a[href]::before {
+ a[href]:hover::before {
      content: "<a href='" attr(href) "'>" 
 }
- link[rel]::before {
+ link[rel]:hover::before {
      content: "<link rel='" attr(rel) "' type='" attr(type)"' href='" attr(href) "'>" 
 }
 
@@ -53,7 +53,7 @@
      font-size:1.0em 
 }
  html {
-     max-width:100ch;
+     max-width:90ch;
      padding:2ch;
      margin:auto;
      background: var(--body-bg);
@@ -128,10 +128,10 @@
  code::after {
      content:'</code>' 
 }
- a::before {
+ a:hover::before {
      content:'<a>' 
 }
- a::after {
+ a:hover::after {
      content:'</a>' 
 }
  aside::before {
