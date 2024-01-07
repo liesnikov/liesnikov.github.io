@@ -167,7 +167,7 @@
     content:'</ul>'
  }
  li::before {
-    content:'   <li>'
+    content:'\t<li>'
  }
  li::after {
     content:'</li>'
