@@ -188,5 +188,13 @@ li::before {
    content:'\00A0\00A0<li>';
 }
 li::after {
-   content:'</li>'
+   content:'</li>';
+}
+
+/* cheating slightly */
+meta {
+    display: none;
+}
+script {
+    display: none;
 }
