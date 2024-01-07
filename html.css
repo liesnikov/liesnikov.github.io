@@ -77,8 +77,8 @@ html {
 /* remove padding for mobile */
 @media screen and (max-width: 84ch) {
     html {
-        max-width: 98%;
-        padding: 1%;
+        max-width: 96%;
+        padding: 2%;
     }
 }
 
