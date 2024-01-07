@@ -42,6 +42,17 @@
      font-size:1.2em;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background: #121212;
+  }
+ 
+  a {
+    color: #809fff;
+  }
+}
+
 /* here is the highly repetitive bit */
  p::before {
      content:'<p>' 
