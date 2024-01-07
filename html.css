@@ -22,19 +22,6 @@ link[rel]::before {
     content: "<link rel='" attr(rel) "' type='" attr(type)"' href='" attr(href) "'>" 
 }
 
-head {
-    font-size:1.0em;
-}
-footer {
-    font-size:1.0em;
-}
-script {
-    display: none;
-}
-meta {
-    display: none
-}
-
 /* special escaping for close style */
 style::before {
     content:'<style>' 
@@ -63,7 +50,13 @@ style::after {
 *::before,*::after {
     color:var(--tag-color);
     font-weight:100;
-    font-size:0.9em;
+    font-size:0.8em;
+}
+head {
+    font-size:1.0em;
+}
+footer {
+    font-size:1.0em;
 }
 html {
     max-width:80ch;
