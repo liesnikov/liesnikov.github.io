@@ -158,3 +158,15 @@
  strong::after {
      content:'</strong>' 
 }
+ ul::before {
+    content:'<ul>'
+ }
+ ul::after {
+    content:'</ul>'
+ }
+ li::before {
+    content:'  <li>'
+ }
+ li::after {
+    content:'</li>'
+ }
