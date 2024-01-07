@@ -53,7 +53,7 @@
      font-size:1.0em 
 }
  html {
-     max-width:70ch;
+     max-width:100ch;
      padding:2ch;
      margin:auto;
      background: var(--body-bg);
