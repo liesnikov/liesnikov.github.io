@@ -165,7 +165,7 @@
     content:'</ul>'
  }
  li::before {
-    content:'  <li>'
+    content:'&emsp;<li>'
  }
  li::after {
     content:'</li>'
