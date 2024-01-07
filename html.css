@@ -165,7 +165,7 @@
     content:'</ul>'
  }
  li::before {
-    content:'&emsp;<li>'
+    content:'<span style="display:inline-block; width: 2ch;"></span><li>'
  }
  li::after {
     content:'</li>'
