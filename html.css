@@ -30,6 +30,10 @@ footer {
     font-size:1.0em;
 }
 
+head {
+    font-size:1.0em;
+}
+
 /* special escaping for close style */
 style::before {
     content:'<style>' 
@@ -59,7 +63,7 @@ style::after {
 *::before,*::after {
     color:var(--tag-color);
     font-weight:100;
-    font-size:1.0em 
+    font-size:0.9em 
 }
 html {
     max-width:80ch;
