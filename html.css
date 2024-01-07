@@ -42,7 +42,7 @@
    :root {
        --body-bg: #111111;
        --body-color: #d3d3d3;
-       --tag-color: #ff3bf2ae
+       --tag-color: rgba(170, 99, 165, 0.75);
    }
 }
 
