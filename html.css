@@ -1,174 +1,174 @@
 /* design inspired by https://github.com/secretGeek/html_wysiwyg/ */
 
 * {
-     display:block;
+    display:block;
 }
- a,code,em,strong {
-     display:inline 
+a,code,em,strong {
+    display:inline 
 }
- *{
-     font-family:Monospace;
-     margin:1.5em 0;
-     padding:0;
-     text-decoration:none 
+*{
+    font-family:Monospace;
+    margin:1.5em 0;
+    padding:0;
+    text-decoration:none 
 }
 
 /* tags with attributes. */
 
- a[href]:hover::before {
-     content: "<a href='" attr(href) "'>" 
+a[href]:hover::before {
+    content: "<a href='" attr(href) "'>" 
 }
- link[rel]:hover::before {
-     content: "<link rel='" attr(rel) "' type='" attr(type)"' href='" attr(href) "'>" 
+link[rel]:hover::before {
+    content: "<link rel='" attr(rel) "' type='" attr(type)"' href='" attr(href) "'>" 
 }
 
 /* special escaping for close style */
- style::before {
-     content:'<style>' 
+style::before {
+    content:'<style>' 
 }
- style::after {
-     content:'<\/style>' 
+style::after {
+    content:'<\/style>' 
 }
 
 
 @media (prefers-color-scheme: light) {
-   :root {
-     --body-bg: #fafafa;
-     --body-color: #333;
-     --tag-color: rgb(136, 18, 128, 0.5);
-   }
+  :root {
+    --body-bg: #fafafa;
+    --body-color: #333;
+    --tag-color: rgb(136, 18, 128, 0.5);
+  }
 }
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-   :root {
-       --body-bg: #111111;
-       --body-color: #d3d3d3;
-       --tag-color: rgba(170, 99, 165, 0.75);
-   }
+  :root {
+      --body-bg: #111111;
+      --body-color: #d3d3d3;
+      --tag-color: rgba(170, 99, 165, 0.75);
+  }
 }
 
 /* brutify */
- *::before,*::after {
-     color:var(--tag-color);
-     font-weight:100;
-     font-size:1.0em 
+*::before,*::after {
+    color:var(--tag-color);
+    font-weight:100;
+    font-size:1.0em 
 }
- html {
-     max-width:90ch;
-     padding:2ch;
-     margin:auto;
-     background: var(--body-bg);
-     color:var(--body-color);
-     font-size:1.2em;
+html {
+    max-width:80ch;
+    padding:2ch;
+    margin:auto;
+    background: var(--body-bg);
+    color:var(--body-color);
+    font-size:1.2em;
 }
 
 /* here is the highly repetitive bit */
- p::before {
-     content:'<p>' 
+p::before {
+    content:'<p>' 
 }
- p::after {
-     content:'</p>' 
+p::after {
+    content:'</p>' 
 }
- html::before {
-     content:'<html>' 
+html::before {
+    content:'<html>' 
 }
- html::after {
-     content:'</html>' 
+html::after {
+    content:'</html>' 
 }
- head::before {
-     content:'<head>' 
+head::before {
+    content:'<head>' 
 }
- head::after {
-     content:'</head>' 
+head::after {
+    content:'</head>' 
 }
- title::before {
-     content:'<title>' 
+title::before {
+    content:'<title>' 
 }
- title::after {
-     content:'</title>' 
+title::after {
+    content:'</title>' 
 }
- link::before {
-     content:'<link>' 
+link::before {
+    content:'<link>' 
 }
- link::after {
-     content:'</link>' 
+link::after {
+    content:'</link>' 
 }
- body::before {
-     content:'<body>' 
+body::before {
+    content:'<body>' 
 }
- body::after {
-     content:'</body>' 
+body::after {
+    content:'</body>' 
 }
- h1::before {
-     content:'<h1>' 
+h1::before {
+    content:'<h1>' 
 }
- h1::after {
-     content:'</h1>' 
+h1::after {
+    content:'</h1>' 
 }
- h2::before {
-     content:'<h2>' 
+h2::before {
+    content:'<h2>' 
 }
- h2::after {
-     content:'</h2>' 
+h2::after {
+    content:'</h2>' 
 }
- p::before {
-     content:'<p>' 
+p::before {
+    content:'<p>' 
 }
- p::after {
-     content:'</p>' 
+p::after {
+    content:'</p>' 
 }
- pre::before {
-     content:'<pre>' 
+pre::before {
+    content:'<pre>' 
 }
- pre::after {
-     content:'</pre>' 
+pre::after {
+    content:'</pre>' 
 }
- code::before {
-     content:'<code>' 
+code::before {
+    content:'<code>' 
 }
- code::after {
-     content:'</code>' 
+code::after {
+    content:'</code>' 
 }
- a:hover::before {
-     content:'<a>' 
+a:hover::before {
+    content:'<a>' 
 }
- a:hover::after {
-     content:'</a>' 
+a:hover::after {
+    content:'</a>' 
 }
- aside::before {
-     content:'<aside>' 
+aside::before {
+    content:'<aside>' 
 }
- aside::after {
-     content:'</aside>' 
+aside::after {
+    content:'</aside>' 
 }
- blockquote::before {
-     content:'<blockquote>' 
+blockquote::before {
+    content:'<blockquote>' 
 }
- blockquote::after {
-     content:'</blockquote>' 
+blockquote::after {
+    content:'</blockquote>' 
 }
- em::before {
-     content:'<em>' 
+em::before {
+    content:'<em>' 
 }
- em::after {
-     content:'</em>' 
+em::after {
+    content:'</em>' 
 }
- strong::before {
-     content:'<strong>' 
+strong::before {
+    content:'<strong>' 
 }
- strong::after {
-     content:'</strong>' 
+strong::after {
+    content:'</strong>' 
 }
- ul::before {
-    content:'<ul>'
- }
- ul::after {
-    content:'</ul>'
- }
- li::before {
-    content:'&nbsp;<li>'
- }
- li::after {
-    content:'</li>'
- }
+ul::before {
+   content:'<ul>'
+}
+ul::after {
+   content:'</ul>'
+}
+li::before {
+   content:'\00A0\00A0<li>';
+}
+li::after {
+   content:'</li>'
+}
