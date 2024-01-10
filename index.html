@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="html.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<script> if (window.location.pathname === '/' && window.location.hash === '') { window.location.href = '#top';} </script>
+<script>""===window.location.hash&&(window.location.href="#top");</script>
 
 </head>
 
@@ -14,39 +14,53 @@
 
 <h1 id="top">Bohdan Liesnikov</h1>
 
-<p>At the moment I’m doing a PhD at TU Delft with <a href="https://jesper.cx">Jesper Cockx</a>.
+<p>At the moment I’m doing a PhD at <a href="https://pl.ewi.tudelft.nl">TU Delft</a> with <a href="https://jesper.cx">Jesper Cockx</a>.
   I’m working on dependently-typed programming languages, in particular anything that has to do with their usability.</p>
-  
+
+<p>Sections on this page:
+    <a href="#projects">Projects</a>,
+    <a href="#links">Links</a>,
+    <a href="#pdetails">Personal Details</a>
+</p>
+
 <h2 id="projects">Projects</h2>
 
 <ul>
-<li>ExEl: building an elaborator using extensible constraints.
+<li>ExEl: building an elaborator using extensible constraints. under review.
     <a href="https://github.com/liesnikov/extensible-elaborator">pdf and sources</a></li>
-<li>Iris Proof Mode in Ltac2.
+<li>Iris Proof Mode in Ltac2. Master's thesis at University of Saarland.
     <a href="https://github.com/liesnikov/msc-thesis/releases/tag/posterity-build">pdf and sources</a></li>
 <li>Generating induction principles and subterm relations for inductive types using MetaCoq.
-    In collaboration with Marcel Ulrich and Yannick Forster.
+    In collaboration with Marcel Ulrich and Yannick Forster. Coq Workshop 2020.
     <a href="https://coq-workshop.gitlab.io/2020/abstracts/Coq2020_01-02-generating.pdf">pdf</a>,
     <a href="https://github.com/uds-psl/metacoq-examples-coqws">sources1</a>,
     and <a href="https://github.com/liesnikov/subterm-metacoq">sources2</a></li>
 </ul>
 
+<p>While at TU Delft I developed a project and helped run <a href="https://studiegids.tudelft.nl/a101_displayCourse.do?course_id=61501">FP course</a> for BSc students,
+   and during my time at Saarland I TA-ed <a href="https://courses.ps.uni-saarland.de/icl_20/">Introduction to Computational Logic</a>.</p>
+
+<p>I've also been involved in bunch of meetups:
+    co-organised<a href="https://www.tudelft.nl/fpday-2024-1">FP Dag 2024</a>,
+    co-founded <a href="https://paperswelove.org/chapter/kyiv">Papers We Love Kyiv</a>,
+    helped run and gave a talk at <a href="https://twitter.com/kyivlambda">Kyiv::fprog</a>.
+</p>
+
 <h2 id="links">Links</h2>
 <ul>
-<li>Mastodon: <a href="https://types.pl/@liesnikov">@liesnikov@types.pl</a></li>
+<li>Mastodon: <a rel="me" href="https://types.pl/@liesnikov">@liesnikov@types.pl</a></li>
 <li>Github: <a href="https://github.com/liesnikov">github.com/@liesnikov</a></li>
 </ul>
 
-<h2 id="name">Personal details</h2>
+<h2 id="pdetails">Personal details</h2>
 
 <p>In professional circles I go by my full name: Bohdan Liesnikov.
    Outside of work I go by Dana, though my Ukrainian friends mostly know me as Богдан.</p>
 <p>If you'd like to contact me you can send a message on Mastodon or reach out via email:
    b dot mylastname at gmail.</p>
 
-
 <footer>
-<p>Design inspired by <a href="https://secretgeek.github.io/html_wysiwyg/html.html">secretgeek.github.io/html_wysiwyg/html.html</a>.</p>
+<p>This page is a quine with the idea borrowed from <a href="https://secretgeek.github.io/html_wysiwyg/html.html">secretgeek.github.io/html_wysiwyg/html.html</a>.</p>
 </footer>
 
 </body>

@@ -189,11 +189,3 @@ li::before {
 li::after {
    content:'</li>';
 }
-
-/* cheating slightly */
-meta {
-    display: none;
-}
-script {
-    display: none;
-}
