@@ -192,6 +192,9 @@ li::after {
 script::before {
     content:'<script>'
 }
+script {
+    color:var(--tag-color)
+}
 script::after {
     content:'</script>'
 }
