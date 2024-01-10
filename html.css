@@ -189,3 +189,9 @@ li::before {
 li::after {
    content:'</li>';
 }
+script::before {
+    content:'<script>'
+}
+script::after {
+    content:'</script>'
+}
