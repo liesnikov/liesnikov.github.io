@@ -31,18 +31,17 @@ style::after {
 }
 
 :root {
-    --body-bg: #fafafa;
+    --body-bg: #f2f2f2;
     --body-color: #333333;
-    --tag-color: #d1d1d1;
-    --max-width: 80ch;
+    --tag-color: #595959;
 }
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-      --body-bg: #111111;
-      --body-color: #d3d3d3;
-      --tag-color: #333;
+      --body-bg: #262626;
+      --body-color: #d8d8d8;
+      --tag-color: #8c8c8c;
   }
 }
 
