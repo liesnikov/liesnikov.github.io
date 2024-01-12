@@ -22,14 +22,6 @@ link[rel]::before {
     content: "<link rel='" attr(rel) "' type='" attr(type)"' href='" attr(href) "'>" 
 }
 
-/* special escaping for close style */
-style::before {
-    content:'<style>' 
-}
-style::after {
-    content:'<\/style>' 
-}
-
 :root {
     --body-bg: #f2f2f2;
     --body-color: #333333;
@@ -74,6 +66,17 @@ html {
     }
 }
 
+
+/* special escaping for close style */
+style::before {
+    content:'<style>';
+}
+style {
+    color:var(--tag-color);
+}
+style::after {
+    content:'<\/style>';
+}
 /* here is the highly repetitive bit */
 p::before {
     content:'<p>' 
