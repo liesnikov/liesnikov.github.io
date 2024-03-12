@@ -2,7 +2,23 @@ User-agent: Googlebot
 Allow: /
 Disallow:
 
+User-agent: Google-InspectionTool
+Allow: /
+Disallow:
+
 User-agent: DuckDuckBot
+Allow: /
+Disallow:
+
+User-agent: Bingbot
+Allow: /
+Disallow:
+
+User-agent: facebot
+Allow: /
+Disallow:
+
+User-agent: AhrefsBot 
 Allow: /
 Disallow:
 
