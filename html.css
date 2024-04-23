@@ -15,7 +15,7 @@ a,code,em,strong {
 
 /* tags with attributes. */
 
-a[href]:hover::before {
+a[href]:focus::before {
     content: "<a href='" attr(href) "'>" 
 }
 link[rel]::before {
@@ -150,10 +150,10 @@ code::before {
 code::after {
     content:'</code>' 
 }
-a:hover::before {
+a:focus::before {
     content:'<a>' 
 }
-a:hover::after {
+a:focus::after {
     content:'</a>' 
 }
 aside::before {
