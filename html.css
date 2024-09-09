@@ -84,6 +84,12 @@ p::before {
 p::after {
     content:'</p>' 
 }
+nav::before {
+    content:'<nav>' 
+}
+nav::after {
+    content:'</nav>' 
+}
 html::before {
     content:'<html>' 
 }
