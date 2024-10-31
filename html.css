@@ -13,6 +13,13 @@ a,code,em,strong {
     text-decoration:none 
 }
 
+
+/* pretty typesetting */
+
+* { hanging-punctuation: first allow-end last; }
+
+a {word-break: break-all;}
+
 /* tags with attributes. */
 
 a[href]:focus::before {
@@ -36,6 +43,7 @@ link[rel]::before {
       --tag-color: #8c8c8c;
   }
 }
+
 
 /* brutify */
 *::before,*::after {
