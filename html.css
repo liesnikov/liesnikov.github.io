@@ -18,8 +18,6 @@ a,code,em,strong {
 
 * { hanging-punctuation: first allow-end last; }
 
-a {word-break: break-all;}
-
 /* tags with attributes. */
 
 a[href]:focus::before {
