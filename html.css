@@ -79,6 +79,8 @@ style::before {
 }
 style {
     color:var(--tag-color);
+    /* there is some inline style for optimization and it takes too much space */
+    display: none;
 }
 style::after {
     content:'<\/style>';
